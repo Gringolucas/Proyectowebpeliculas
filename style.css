@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  /* background: url('bg.jpg') no-repeat center center fixed; */
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.hamburger span {
+  display: block;
+  background: #f3f3f3;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.links-menu {
+  display: flex;
+  padding: 0;
+}
+
+.links-menu li {
+  padding: 0 40px;
+  list-style-type: none;
+}
+
+.links-menu li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.links-menu li a:hover {
+  color: #00eeff;
+}
+
+.links-menu.active {
+  display: flex;
+  animation: openMenu 350ms ease-in-out both;
+}
+
+/* Animación de las barras del menu hamburger */
+.br-1.animate {
+  transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animate {
+  opacity: 0;
+}
+
+.br-3.animate {
+  transform: rotate(45deg) translate(-10px, -8px);
+}
+
+/* Animación del menu */
+@keyframes openMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Inicio de la sección MAIN */
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f242d;
+  font-size: 100px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+section:nth-child(odd) {
+  background: #323946;
+}
+
+/* MQ */
+@media screen and (max-width: 990px) {
+  body {
+    overflow: hidden;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+  }
+
+  nav {
+    background: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 25px;
+  }
+
+  .links-menu {
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    height: 45vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+  }
+
+  .links-menu li {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+
