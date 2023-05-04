@@ -123,10 +123,12 @@ section:nth-child(odd) {
 
 /* MQ */
 @media screen and (max-width: 990px) {
-  body {
-    overflow: hidden;
-  }
 
+  .principales section{
+    display: flex;
+    font-size: 9vh;
+
+  }
   .logo {
     padding-left: 25px;
   }
@@ -144,7 +146,7 @@ section:nth-child(odd) {
     background: rgba(0, 0, 0, 0.7);
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px 25px;
+    padding: 3vh 3vh;
   }
 
   .links-menu {
