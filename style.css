@@ -163,6 +163,14 @@ section:nth-child(odd) {
     text-align: center;
     padding: 30px;
   }
+
+
 }
 
-
+  
+form {
+  margin-right: 0px;
+  font-size: 16px;
+  color: rgb(10, 2, 83);
+  background-color: rgba(7, 5, 15, 0)
+}

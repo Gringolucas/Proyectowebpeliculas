@@ -28,7 +28,63 @@
     <section id="home">Inicio</section>
     <section id="services">Servicios</section>
     <section id="about">Nosotros</section>
-    <section id="contact">Contacto</section>
+    <section id="contact">Contacto
+      <form  action="mailto:lucassebastian1983@outlook.com" method="post" enctype="text/plain">
+        <label for="Nombre">Nombre</label> 
+        <input type="text" name="nombre" size="22" maxlength="100"> <!-- aqui el nombre-->
+        <br>      
+        Email     <input type="text" name="email" size="25" maxlength="100" value="@"> <!--aqui email-->
+        <br>
+        Estilo de peliculas/series: <input type="text" name="poblacion" size="20" maxlength="60"> <!--aqui poblacion-->
+        <br>
+        Varon      <input type="radio" name="sexo" value="Varon" checked> <!--sexo-->
+        <br>
+        Mujer      <input type="radio" name="sexo" value="Mujer">
+        <br>
+        <label for="fecnac">Fecha Nacimiento</label>
+        <input type="date" name="fecnac" id="fecnac">
+        <br>
+        Mira peliculas o serie: <select name="utilizacion">
+            <option value="1">Una vez al dia
+    
+            <option value="2">Varias veces al dia
+                
+            <option value="3">Varias veces en la semana
+    
+            <option value="4">Solo fines de semana
+    
+        </select>
+    
+        <br>
+    
+        <br>
+        
+        Comentarios sobre nuestra pagina Web
+        
+        <br>
+        
+        <textarea cols="30" rows="7" name="comentarios"></textarea>
+        
+        <br>
+        
+        <br>
+        
+        <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación de las novedades y nuevos lanzamientos.
+        
+        <br>
+        
+        <br>
+        
+        <input type="submit" value="Enviar formulario">
+        
+        <br>
+        
+        <br>
+        
+        <input type="Reset" value="Borrar todo">
+    </form>
+      
+    </section>
   </main>
   <script src="main.js"></script>
 </body>
