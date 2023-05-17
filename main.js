@@ -27,4 +27,31 @@ window.onscroll = () => {
   });
 };
 
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+});
 
+function validarFormulario(evento) {
+  evento.preventDefault();
+  var nombre = document.getElementById('nombre').value;
+  if(nombre.length == 0) {
+    alert('No has escrito nada en el nombre');
+    return;
+  }
+  function validar_email( email ) {
+    var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email) ? true : false;
+  }
+    var email = document.getElementById('email').value;
+    if( validar_email(email) ){
+    alert("El email es correcto");
+  }
+  else
+  {
+    alert("El email NO es correcto");
+    return;
+  }
+  this.submit();
+  alert("Muchas gracias por enviar el formulario");
+   	document.fvalida.submit();
+}
