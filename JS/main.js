@@ -1,18 +1,21 @@
-fetch()
-.then(response => response.json())
-.then(data => {console.log(data);
-document.querySelector("div").innerHTML="lo que tiene que decir: "+data})
 
-
-
-
-
-
-
-
-
-
-
+let header= `
+<nav>
+      <a href="#" class="logo">Proyecto 2</a>
+      <ul class="links-menu">
+        <li><a href="#home" class="active">Inicio</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="hamburger" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+    </nav>
+`
+document.querySelector("header").innerHTML=header;
 
 let burger = document.querySelector('.hamburger');
 let link = document.querySelector('.links-menu');
@@ -43,10 +46,6 @@ window.onscroll = () => {
   });
 };
 
-
-
-
-
 /*esto es del slider*/
 let sliderInner = document.querySelector(".slider--inner");
 let images =
@@ -64,4 +63,7 @@ setInterval(function() {
   }
  
 }, 5000);
-/*esto es del slider*/
+/*fin del slider*/
+
+
+

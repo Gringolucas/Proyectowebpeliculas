@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(175, 24, 24);    /* color of the scroll thumb */
+  background-color:#960202;    /* color of the scroll thumb */
   border-radius: .4em;     /* roundness of the scroll thumb */
  /* creates padding around scroll thumb */
 }
@@ -71,7 +71,7 @@ nav {
 
 .hamburger span {
   display: block;
-  background: #f3f3f3;
+  background:#960202;
   height: 3px;
   width: 28px;
   margin: 10px auto;
@@ -90,14 +90,15 @@ nav {
 
 .links-menu li a {
   text-decoration: none;
+  
   font-size: 1.2rem;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
   transition: .3s;
 }
 
 .links-menu li a:hover {
-  color: #00eeff;
+  color: #ff0000;
 }
 
 .links-menu.active {
@@ -171,29 +172,6 @@ img {
 /*Acá termina el slider de inicio*/
 
 
-/*.grid-item {
-  background-color: rosybrown;
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
-  border-radius: .1em;
-  transition: transform 0.3s ease-in-out;
-}
-.grid-item:hover {
-  filter: opacity(.9);
-  transform: scale(1.04);
-}
-
-
-#personajes{
-  display: grid;
-  padding: .3em;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows:auto;
-  gap: .2em;
-}*/
-
 #personajes {
   padding-top: 8vh;
   display: flex;
@@ -204,6 +182,8 @@ img {
  
  
 }
+
+/*Tarjetas de presentación de personajes*/
 
 .card {
   font-size: 2vh;
@@ -248,24 +228,45 @@ img {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgba(3,35,54);
-  padding: .2em;
+  background:#960202;
   color: #f3f3f3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 5%;
 }
 
 .card .back h3 {
-  font-size: 4vh;
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 90%;
+  font-size: 300%;
+  padding-bottom: 10%;
+  margin-top: 10%;
+  
+}
+
+.card .back .datos {
+  margin-bottom: 10%;
   
 }
 
 .card .back p {
-  letter-spacing:.1em;
-  padding: .5em;
-  font-size: 1.8vh;
+ font-size: 100%;
+}
+
+.back ul {
+  list-style: none;
+}
+
+.back h2 {
+  font-size: 120%;
+  color: #dfa6a6;
+ 
+}
+
+.datos li {
+  font-size: 95%;
 }
 
 .card:hover .front {
@@ -274,8 +275,9 @@ img {
 
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
+ scale: 110%;
 }
-
+/*Tarjetas de presentación de personajes*/
 
 
 
