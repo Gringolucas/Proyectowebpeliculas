@@ -385,6 +385,7 @@ img {
 /* ** Footer section */
 footer {
   background: #960202;
+  min-width: 100vh;
 }
 
 .footer-container {

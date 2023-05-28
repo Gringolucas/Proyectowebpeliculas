@@ -26,7 +26,6 @@ for(let elemento of superheroes){
       </div>
       `
 }
-document.querySelector("#personajes").innerHTML=cad2
-  console.log(superheroes);})
+document.querySelector("#personajes").innerHTML=cad2})
 .catch(error => console.log(error))
 
