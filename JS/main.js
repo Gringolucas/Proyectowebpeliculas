@@ -26,10 +26,10 @@ let footer= `
     </div>
     <div class="footer-nav">
       <ul>
-        <li><a href="#home" class="active">Inicio</a></li>
-        <li><a href="#personajes">Personajes</a></li>
-        <li><a href="#about">Nosotros</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="index.html#home" class="active">Inicio</a></li>
+        <li><a href="index.html#personajes">Personajes</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </div>
   </div>
